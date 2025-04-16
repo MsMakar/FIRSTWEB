@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href=""><img src="./картинки/телеграмм.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/вк.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/тик ток.png" alt=""></a>
+            </li>
+        </ul>
+        <img src="./картинки/спорт.png" alt="">
+    </header>
+
+    <main>
+        <ul class="sportsmen-list">
+            
+            <li>
+                <a href=""><img src="./картинки/танцы.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/футбол.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/руки.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/штанга.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/Лаша Талахадзе.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/Карлос Насар.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./картинки/Лю Хуаньхуа.png" alt=""></a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div class="counter">
+            <button class="mines" onclick="action(0)">
+                -1
+            </button>
+            <span class="all">
+                0
+            </span>
+            <button class="plus" onclick="action(1)">
+                +1
+            </button>
+        </div>
+    </footer>
+    <script>
+        let number = document.querySelector(".all")
+        let mines = document.querySelector(".mines")
+        let plus = document.querySelector(".plus")
+        let mainNumber = 0
+        function action(param){
+            if (param == 0) {
+                console.log('-')
+                mainNumber = mainNumber - 1
+                number.textContent = mainNumber
+            }
+            else if (param == 1){
+                console.log('+')
+                mainNumber = mainNumber + 1
+                number.textContent = mainNumber
+            }
+        }
+    </script>
+</body>
+</html>
